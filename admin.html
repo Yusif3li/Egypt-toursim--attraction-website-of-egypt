@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="w-75 m-auto">
+      <form action="">
+        <div class="pt-5">
+          <label for="pName" class="p-1"> Hotel Name</label>
+          <input type="text" id="pName" class="form-control" />
+          <label for="pImg" class="p-1"> Hotel Image</label>
+          <input type="file" id="pImg" class="form-control" />
+          <label for="pDescription" class="p-1"> Hotel Description</label>
+          <textarea name="" id="pDescription" class="form-control"></textarea>
+        </div>
+      </form>
+      <button
+        type="button"
+        id="addBtn"
+        class="btn btn-outline-info"
+        onclick="addProduct()"
+      >
+        Add Hotel
+      </button>
+      <button
+        type="button"
+        onclick="clearItem()"
+        class="btn btn-outline-danger"
+      >
+        Clear Form
+      </button>
+      <input
+        type="text"
+        onfocus="search()"
+        onblur="search()"
+        onkeyup="search()"
+        id="pSearch"
+        class="w-50 mt-4 mx-auto d-block form-control"
+        placeholder="Search....."
+      />
+      <div
+        id="data"
+        class="flex-column pt-5 align-items-center d-flex text-center"
+      ></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

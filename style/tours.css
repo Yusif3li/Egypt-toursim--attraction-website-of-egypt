@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    min-width: 700px;
+    background-color: #fbf2c4;
+}
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 13vh;
+    padding: 10px 30px;
+    background-color: #c7522a;
+
+    z-index: 5;
+}
+
+li, a, button {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fbf2c4;
+    text-decoration: none;
+}
+
+.identity {
+    display: flex;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.name {
+    font-family: "Barlow", sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #fbf2c4;
+}
+
+.logo {
+    width: 10vh;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-links li {
+    width: 8vw;
+    height: 13vh;
+}
+
+.nav-links li:hover {
+    background-color: #fbf2c4;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out ;
+}
+
+.nav-links li:hover a {
+    color: #c7522a ;
+}
+
+header .btn {
+    margin-left: 15px;
+}
+
+.btn:not(.search-area .btn) {
+    background-color: #fbf2c4;
+    color: #c7522a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:not(.search-area .btn):hover {
+    scale: 1.1;
+}
+
+/* Search section */
+
+.search-section {
+    position: relative;
+    height: 400px;
+    background-image: url(../resources/dmitrii-zhodzishskii-jSPx-qvt518-unsplash.jpg);
+    background-size: cover;
+    background-position: 25vw center;
+}
+
+.search-area {
+    position: absolute;
+    width: 60%;
+    height: 400px;
+    padding: 0 20px;
+    background-color: transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 400px solid #fbf2c4;
+}
+
+.search-area h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #008585;
+    margin: 60px 0 20px;
+}
+
+.search-area p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #c7522a;
+    margin-bottom: 80px;
+}
+
+
+.search-area form span {
+    display: block;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #c7522a;
+    margin-bottom: 10px;
+}
+
+.search-area form input {
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #c7522a;
+    border: 2px solid #c7522a;
+}
+
+.search-area form button {
+    background-color: #c7522a;
+    color: #fbf2c4;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* places section */
+
+.places-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15vh auto;
+}
+
+.places-section h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #008585;
+    margin: 60px 0 20px;
+}
+
+.places-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh auto;
+    width: 80%;
+    gap: 10px;
+}
+
+.places-area .card {
+    width: 20%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #c7522a;
+    transition: all 0.3s linear;
+}
+
+.places-area .cairo {
+    background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(0,0,0,0.5)),url(../resources/omar-elsharawy-pwMbtwA9LRc-unsplash.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.places-area .sinai {
+    background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(0,0,0,0.5)),url(../resources/or-hakim-aXHVRpXI2cg-unsplash.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.places-area .luxor {
+    background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(0,0,0,0.5)),url(../resources/ahmed-shabana-ADa9bb3tqR4-unsplash.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.places-area .hurghada {
+    background-image: linear-gradient(rgba(0,0,0,0.5),  rgba(0,0,0,0.5)),url(../resources/samer-khodeir-4Httv3FE8IE-unsplash.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+.places-area div h2 {
+    font-family: "Barlow", sans-serif;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #fbf2c4;
+    margin: 10px;
+    writing-mode: vertical-lr;
+}
+
+.places-area div:hover {
+    width: 50%;
+    cursor: pointer;
+
+}
+
+.places-area a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* Hotels section */
+
+.hotels-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px;
+}
+
+
+.hotels-section h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #008585;
+    margin: 60px;
+    text-align: center;
+}
+
+.hotels-area h2 {
+    font-family: "Barlow", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #008585;
+    margin: 20px 0;
+}
+
+.hotels-area p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #c7522a;
+    margin-bottom: 20px;
+}
+
+.hotel-card {
+    margin: 20px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.hotel-card img {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    
+}
+
+.hotel-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+/* Footer section */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #c7522a;
+}
+
+footer .social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer p {
+    font-family: "Barlow", sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    color: #002f2f;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #002f2f;
+}
+
+
+.footer-links a:hover {
+    color: #fbf2c4;
+}
+
+
+.footer-links li {
+    padding: 20px;
+    align-content: center;
+}
